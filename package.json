@@ -1,7 +1,6 @@
 {
   "name": "vhen-vue-admin-2x",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "vue-cli-service serve --mode development",
     "test": "vue-cli-service serve --mode testing",
