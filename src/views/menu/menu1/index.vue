@@ -1,19 +1,18 @@
 <!--
  * @Author: Vhen
- * @Date: 2020-10-09 15:44:53
+ * @Date: 2020-10-15 10:07:13
  * @LastEditors: Vhen
- * @LastEditTime: 2020-10-12 09:39:29
- * @Description: 
+ * @LastEditTime: 2020-10-15 10:41:27
+ * @Description:
 -->
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div>
+     <router-view />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
   props: {},
   data() {
     return {};
@@ -21,11 +20,9 @@ export default {
   computed: {},
   components: {},
   methods: {},
-  mounted(){},
-  watch: {}
-}
+  mounted() {},
+  watch: {},
+};
 </script>
-
 <style lang='scss' scoped>
-
 </style>

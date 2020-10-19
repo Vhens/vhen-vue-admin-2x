@@ -1,19 +1,16 @@
 <!--
  * @Author: Vhen
- * @Date: 2020-10-09 15:44:53
+ * @Date: 2020-10-15 10:09:11
  * @LastEditors: Vhen
- * @LastEditTime: 2020-10-12 09:39:29
- * @Description: 
+ * @LastEditTime: 2020-10-15 10:09:23
+ * @Description:
 -->
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
+  <div class="container">菜单1-2</div>
 </template>
 
 <script>
 export default {
-  name: 'App',
   props: {},
   data() {
     return {};
@@ -25,7 +22,5 @@ export default {
   watch: {}
 }
 </script>
-
 <style lang='scss' scoped>
-
 </style>

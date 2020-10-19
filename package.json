@@ -3,17 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "vue-cli-service serve --mode development",
+    "test": "vue-cli-service serve --mode testing",
+    "build:dev": "vue-cli-service build --mode development",
+    "build:test": "vue-cli-service build --mode testing",
+    "build:prod": "vue-cli-service build --mode production",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.12"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "vue-template-compiler": "^2.6.11"
+    "html-webpack-tags-plugin": "^2.0.17",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.3",
+    "svg-sprite-loader": "^5.0.0",
+    "vue-i18n": "^8.22.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-bundle-analyzer": "^3.9.0"
   },
   "browserslist": [
     "> 1%",
