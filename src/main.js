@@ -2,7 +2,7 @@
  * @Author: Vhen
  * @Date: 2020-10-09 15:43:25
  * @LastEditors: Vhen
- * @LastEditTime: 2020-10-19 10:18:41
+ * @LastEditTime: 2020-11-11 13:49:02
  * @Description:
  */
 import Vue from 'vue'
@@ -21,7 +21,6 @@ Vue.use(VueI18n)
 Vue.prototype.$utils=utils
 
 Vue.config.productionTip = false
-
 
 const i18n = new VueI18n({ 
 

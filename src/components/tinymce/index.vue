@@ -2,7 +2,7 @@
  * @Author: Vhen
  * @Date: 2020-10-15 17:42:35
  * @LastEditors: Vhen
- * @LastEditTime: 2020-10-16 16:29:32
+ * @LastEditTime: 2020-11-11 13:53:16
  * @Description:
 -->
 <template>
@@ -183,7 +183,10 @@ export default {
      this.initTinymce()
   },
   watch: {
-    value(val) {
+    value(val,old) {
+      if(!old){
+         window.tinymce.get(this.tinymceId).setContent(val || "");
+      }
       if (!this.hasChange && this.hasInit) {
         this.$nextTick(() =>
           window.tinymce.get(this.tinymceId).setContent(val || ''))

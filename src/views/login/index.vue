@@ -1,10 +1,3 @@
-<!--
- * @Author: Vhen
- * @Date: 2020-10-16 12:41:05
- * @LastEditors: Vhen
- * @LastEditTime: 2020-10-16 13:52:56
- * @Description:
--->
 <template>
   <section class="login-container">
     <div class="stars">

@@ -2,7 +2,7 @@
  * @Author: Vhen
  * @Date: 2020-10-19 09:18:21
  * @LastEditors: Vhen
- * @LastEditTime: 2020-10-19 10:14:04
+ * @LastEditTime: 2020-11-11 13:46:48
  * @Description:
  */
 
@@ -27,17 +27,23 @@ function gitIp() {
   }
 }
 
+const port = process.env.port || process.env.npm_config_port || 9530 // dev port
+const pageTitle =  'vue-admin-2x' // page title
+
 module.exports = {
   runtimeCompiler: true,
   publicPath: '/', // 公共路径
+  outputDir: 'dist',
+  assetsDir: 'static',
   lintOnSave: false,
   productionSourceMap: false,
   devServer: {
-    host: gitIp(),
+    port: port,
     open: true,
-    port: 80,
-    https: false,
-    hotOnly: false,
+    overlay: {
+      warnings: false,
+      errors: true
+    },
     disableHostCheck: true,
     proxy: {
       '/*': {
@@ -45,11 +51,13 @@ module.exports = {
         changeOrigin: true,
         ws: false,
         secure: false,
-        pathRewrite: {},
-      },
+        pathRewrite: {}
+      }
     },
+    // before: require('./mock/mock-server.js')
   },
   configureWebpack: {
+    name: pageTitle,
     resolve: {
       modules: [
         // 优化模块查找路径
@@ -82,13 +90,13 @@ module.exports = {
 
     /* 添加分析工具*/
     if (process.env.NODE_ENV === 'production') {
-      // if (process.env.npm_config_report) {
+      if (process.env.npm_config_report) {
         config
           .plugin('webpack-bundle-analyzer')
           .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
           .end();
         config.plugins.delete('prefetch')
       }
-    // }
+    }
   },
 }

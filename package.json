@@ -1,12 +1,13 @@
 {
   "name": "vhen-vue-admin-2x",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vue-cli-service serve --mode development",
     "test": "vue-cli-service serve --mode testing",
     "build:dev": "vue-cli-service build --mode development",
     "build:test": "vue-cli-service build --mode testing",
     "build:prod": "vue-cli-service build --mode production",
+    "del": "rm -rf node_modules && npm i",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
@@ -17,6 +18,8 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "autoprefixer": "^9.8.6",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
     "html-webpack-tags-plugin": "^2.0.17",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.3",

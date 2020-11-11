@@ -2,38 +2,37 @@
  * @Author: Vhen
  * @Date: 2020-10-10 13:58:28
  * @LastEditors: Vhen
- * @LastEditTime: 2020-10-19 10:11:46
+ * @LastEditTime: 2020-11-11 13:54:35
  * @Description:
 -->
 <template>
   <div class="home container">
-    home
-{{message}}
-{{host}}
+    首页
+    {{ host }}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'home',
+  name: "home",
   props: {},
   data() {
     return {
-      message: '撒地方建设的福建师范',
-      host: ''
+      message: "",
+      host: "",
     };
   },
   computed: {},
   components: {},
   methods: {},
-  mounted(){
-    this.host = process.env.NODE_ENV
+  mounted() {
+    this.host = process.env.NODE_ENV;
   },
-  watch: {}
-}
+  watch: {},
+};
 </script>
 <style lang='scss' scoped>
-.home{
+.home {
   font-size: 18px;
   color: red;
 }

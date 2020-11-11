@@ -2,7 +2,7 @@
  * @Author: Vhen
  * @Date: 2020-10-13 11:11:21
  * @LastEditors: Vhen
- * @LastEditTime: 2020-10-15 10:40:53
+ * @LastEditTime: 2020-10-20 13:29:14
  * @Description:
 -->
 <template>
@@ -136,4 +136,7 @@ export default {
 };
 </script>
 <style lang='scss' scoped>
+.nest-menu{
+  padding-left: 10px;
+}
 </style>
